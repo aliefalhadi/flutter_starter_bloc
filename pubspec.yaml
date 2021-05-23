@@ -16,6 +16,8 @@ dependencies:
   flutter_bloc: ^6.1.1
   hydrated_bloc: ^6.1.0
   equatable: ^1.2.6
+  dio: ^3.0.10
+  dio_http_cache:
 
 dev_dependencies:
   flutter_test:

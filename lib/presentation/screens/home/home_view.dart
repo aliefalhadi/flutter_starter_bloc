@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_startup/core/constants/app_router_strings.dart';
 import 'package:flutter_startup/core/constants/strings.dart';
 import 'package:flutter_startup/logic/cubits/counter/counter_cubit.dart';
 
@@ -24,6 +25,13 @@ class HomeView extends StatelessWidget {
                 style: Theme.of(context).textTheme.headline4,
               ),
             ),
+
+            RaisedButton(
+              child: Text("data user"),
+              onPressed: (){
+                Navigator.pushNamed(context, AppRouterStrings.user);
+              },
+            )
           ],
         ),
       ),
